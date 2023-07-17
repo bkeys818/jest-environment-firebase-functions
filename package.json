@@ -1,0 +1,46 @@
+{
+	"name": "jest-environment-firebase-functions",
+	"version": "1.0.0",
+	"description": "Jest testing environment for firebase functions",
+	"author": "Ben Keys (https://github.com/bkeys818)",
+	"license": "MIT",
+	"keywords": [
+		"firebase",
+		"jest",
+		"functions",
+		"environment",
+		"firebase-functions",
+		"firebase-functions-test"
+	],
+	"files": [
+		"dist"
+	],
+	"main": "dist/index.js",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"build": "tsc",
+		"format": "prettier -w ."
+	},
+	"dependencies": {
+		"jest-environment-node": "^29.6.1"
+	},
+	"devDependencies": {
+		"@jest/environment": "^29.6.1",
+		"@tsconfig/node14": "^14.1.0",
+		"@types/node": "^20.4.2",
+		"prettier": "^3.0.0",
+		"typescript": "^5.1.6"
+	},
+	"peerDependencies": {
+		"firebase-functions-test": ">=3.1.0",
+		"jest": ">=28.0.0"
+	},
+	"engines": {
+		"node": ">=14.0.0",
+		"pnpm": ">=3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bkeys818/jest-environment-firebase-functions"
+	}
+}
