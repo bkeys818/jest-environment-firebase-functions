@@ -34,6 +34,23 @@ module.exports = {
 
 For more on writing tests, see the [Firebase documentation](https://firebase.google.com/docs/functions/unit-testing#testing_http_functions).
 
+### Typescript Usage
+
+```json
+{
+	"compilerOptions": {
+		/* ... */
+		"typeRoots": [
+			"./node_modules/@types",
+			"./node_modules/jest-environment-firebase-functions"
+		]
+		/* ... */
+	}
+}
+```
+
+If you'd also like to use the `"types"` options, incude `"dist"` in the list.
+
 ## Options
 
 | Option        | Required | Notes                                        |
